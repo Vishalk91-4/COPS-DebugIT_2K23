@@ -3921,6 +3921,11 @@ web-tabs:not(:defined) {
     }
 }
 
+.headline all-center flow {
+    padding-top: 500px;
+    margin-top: 50px;
+}
+
 .wrapper[data-flush],[data-flush].prose {
     padding-inline:0}
 
@@ -3930,7 +3935,7 @@ web-tabs:not(:defined) {
     }
 
     .about .hero__content {
-        margin-block-start:clamp(6.25rem, 5.36rem + 4.46vw, 9.375rem)}
+        margin-block-start:clamp(5rem, 4rem + 2vw, 5rem);text-align: center;}
 }
 
 .abc {
@@ -3980,6 +3985,7 @@ web-tabs:not(:defined) {
 }
 
 .about__developers .headline__title {
+    padding-top: 50px;
     margin-top: 1.5em
 }
 
@@ -4749,7 +4755,6 @@ web-search.course__search .web-search__open-btn,web-search.course__search .web-s
     display: block;
     height: 100%;
     width: 100%;
-    background-image: url("https://web-dev.imgix.net/image/jxu1OdD7LKOGIDU7jURMpSH2lyK2/3a8feEJ8tNYtUQRUHPER.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom left
@@ -4914,7 +4919,8 @@ web-search.course__search .web-search__open-btn,web-search.course__search .web-s
 }
 
 *:not(body).unresolved {
-    display: none
+    display: contents
+
 }
 
 web-tabs.unresolved {
@@ -4932,6 +4938,23 @@ web-tabs.unresolved {
 
 .bg-checkbox-checked {
     background: var(--color-checkbox-checked)
+}
+
+.bck {
+    text-align: center;
+    height: 190px;
+    padding-top: 10px;
+    width: 1025px;
+    padding-left: 500px;
+}
+
+
+.bck1 {
+    text-align: center;
+    height: 150px;
+    padding-top: 10px;
+    width: 5050px;
+    padding-left: 500px;
 }
 
 .bg-core-text {
@@ -6533,3 +6556,4 @@ web-tabs.unresolved {
         display: revert
     }
 }
+
