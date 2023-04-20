@@ -26,7 +26,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ https://github.com/Vishalk91-4/COPS-DebugIT_2K23/blob/main/index.html }}
+      url: ${{ main/index.html }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
