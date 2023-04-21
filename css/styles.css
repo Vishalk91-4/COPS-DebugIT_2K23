@@ -73,6 +73,10 @@ h1 {
     --color-highlights-purple: #7600ae
 }
 
+element.style {
+    padding-left: 105px;
+}
+
 :root {
     --color-mode: var(--color-light);
     --color-checkbox: var(--color-backgrounds-checkbox);
