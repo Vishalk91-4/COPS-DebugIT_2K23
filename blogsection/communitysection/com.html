@@ -1,0 +1,1068 @@
+<!doctype html>
+<html lang=en>
+    <meta charset=utf-8>
+    <meta content="width=device-width,initial-scale=1.0" name=viewport>
+    <script>
+        window.applyThemeSetting = function(e) {
+            const t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+              , o = e || localStorage.getItem("user-color-scheme") || t
+              , r = document.documentElement.getAttribute("data-user-theme");
+            if (o) {
+                o !== r && document.documentElement.setAttribute("data-user-theme", o);
+                const e = document.querySelector("web-lighthouse-viewer article.lh-root");
+                e && e.classList.toggle("lh-dark", "dark" === o)
+            }
+        }
+        window.applyThemeSetting();
+    </script>
+    <link href="C:\DebugIT_23\Webdev.css" rel=stylesheet>
+    <link as=font crossorigin=anonymous href=/fonts/material-icons/regular.woff2 rel=preload>
+    <link as=font crossorigin=anonymous href=/fonts/google-sans/regular/latin.woff2 rel=preload>
+    <link as=font crossorigin=anonymous href=/fonts/google-sans/bold/latin.woff2 rel=preload>
+    <link href=https://web-dev.imgix.net rel=preconnect>
+    <meta content=#fff name=theme-color>
+    <title>Cops.DebugIT</title>
+
+    <meta name=description>
+    <meta content=cops.vishalk91_4 itemprop=name>
+    <meta itemprop=description>
+    <meta content="https://web-dev.imgix.net/image/FNkVSAX8UDTTQWQkKftSgGe9clO2/uZ3hQS2EPrA9csOgkoXI.png?auto=format&fit=max&w=1200&fm=auto" itemprop=image>
+    <meta content=en_US property=og:locale>
+    <meta content=website property=og:type>
+    <meta content=https://web.dev/ property=og:url>
+    <meta content=cops.vishalk91_4 property=og:site_name>
+    <meta content=cops.vishalk91_4 property=og:title>
+    <meta property=og:description>
+    <meta content="https://web-dev.imgix.net/image/FNkVSAX8UDTTQWQkKftSgGe9clO2/uZ3hQS2EPrA9csOgkoXI.png?auto=format&fit=max&w=1200&fm=auto" property=og:image>
+    <meta property=og:image:alt>
+    <meta content=summary_large_image name=twitter:card>
+    <meta content=cops.vishalk91_4 name=twitter:title>
+    <meta name=twitter:description>
+    <meta content="https://web-dev.imgix.net/image/FNkVSAX8UDTTQWQkKftSgGe9clO2/uZ3hQS2EPrA9csOgkoXI.png?auto=format&fit=max&w=1200&fm=auto" name=twitter:image>
+    <link data-title="cops.vishalk91_4 feed" href=/feed.xml rel=alternate type=application/atom+xml>
+    <link href=/manifest.webmanifest rel=manifest>
+    <link rel="shortcut icon" href=/images/favicon.ico>
+    <link href=/images/favicon-32x32.png rel=icon sizes=32x32 type=image/png>
+    <link href=/images/favicon-16x16.png rel=icon sizes=16x16 type=image/png>
+    <link href=/images/apple-touch-icon.png rel=apple-touch-icon sizes=180x180>
+    <link color=#0054ff href=/images/safari-pinned-tab.svg rel=mask-icon>
+    <script>
+        function loadScript(e, d) {
+            const n = document.createElement("script");
+            if (n.src = e,
+            n.onload = ()=>{
+                document.dispatchEvent(new CustomEvent("scriptLoaded",{
+                    detail: {
+                        url: e
+                    }
+                }))
+            }
+            ,
+            d && (n.type = d),
+            "module" === d) {
+                n.async = !1;
+                const d = document.createElement("link");
+                d.rel = "modulepreload",
+                d.href = e,
+                document.head.append(d),
+                window.addEventListener("DOMContentLoaded", (()=>{
+                    document.head.append(n)
+                }
+                ))
+            } else
+                document.head.append(n)
+        }
+    </script>
+    <script>
+        loadScript("/js/app.js?v=2427ae1c", "module");
+        let pageScripts = ["/js/home.js"];
+        document.addEventListener("scriptLoaded", (e=>{
+            const t = e.detail.url.split("?")[0]
+              , p = pageScripts.indexOf(t);
+            p > -1 && pageScripts.splice(p, 1),
+            0 === pageScripts.length && document.dispatchEvent(new CustomEvent("pageScriptsLoaded"))
+        }
+        )),
+        loadScript("/js/home.js?v=e5381846", "module");
+    </script>
+    <script>
+        loadScript("https://shared-storage-demo-content-producer.web.app/paa/scripts/private-aggregation-test.js", null);
+    </script>
+    <script>
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        window.dataLayer = window.dataLayer || [],
+        gtag("js", new Date);
+    </script>
+    <meta content="Ah3H7DwyoUUsaRQdSySa1hMCS/JFQn/VVmrQODVDnRJGH9mU/uG6G0Uhh+4atnFGAoiEwDq+r9TzCyBi7f7wRw4AAABfeyJvcmlnaW4iOiJodHRwczovL3dlYi5kZXY6NDQzIiwiZmVhdHVyZSI6IlNwZWN1bGF0aW9uUnVsZXNQcmVmZXRjaEZ1dHVyZSIsImV4cGlyeSI6MTY5NDEzMTE5OX0=" http-equiv=origin-trial>
+    <script type=speculationrules>
+        {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*\\?*","relative_to":"document"},{"not":{"href_matches":"/patterns/*\\?*","relative_to":"document"}}]}}]}
+    </script>
+    <body class=unresolved>
+        <web-snackbar-container></web-snackbar-container>
+        <a class="skip-link button" data-type=primary href=#main>Skip to content</a>
+        <web-header class=site-header role=banner>
+            <div class="cluster gutter-base">
+                <button class="icon-button tooltip color-core-text md:hidden-yes" aria-labelledby=menu-button-toolip data-alignment=right data-open-drawer-button>
+                    <svg viewbox="0 0 24 24" height=24 width=24 xmlns=http://www.w3.org/2000/svg>
+                        <path d="M0 0h24v24H0z" fill=none/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                    <span class=tooltip__content id=menu-button-toolip>Open menu</span>
+                </button>
+                <a class="site-header__brand brand" href="C:\DebugIT_23\Webdev.html">
+                <img src="C:\Users\DELL\Pictures\Screenshots\Screenshot 2023-04-16 155907.png" alt="COPS_DEBUGIT" href="C:\DebugIT_23\Webdev.html">
+                    
+</a></div>
+<web-navigation-drawer type=standard>
+    <nav aria-label="main navigation" class=site-header__nav data-drawer-container>
+        <a data-category="Site-Wide Custom Events" data-label="Tab: About" class=site-header__link href=C:\DebugIT_23\aboutsection\about.html>About </a>
+        <a data-category="Site-Wide Custom Events" data-label="Tab: Blog" class=site-header__link href="C:\DebugIT_23\blogsection\blog.html">Blog </a>
+        <a data-category="Site-Wide Custom Events" data-label="Tab: Learn" class=site-header__link href=C:\DebugIT_23\learnsection\learn.html>Learn </a>
+        <a data-category="Site-Wide Custom Events" data-label="Tab: Community" class=site-header__link href=C:\DebugIT_23\communitysection\community.html>Communitty </a>
+        <a data-category="Site-Wide Custom Events" data-label="Tab: Developer Profile" class=site-header__link href=/patterns/>Developer Profile </a>
+        <button class="icon-button tooltip color-core-text md:hidden-yes" data-drawer-close-button>
+            <svg viewbox="0 0 24 24" aria-label=close class=icon height=24 role=img width=24 xmlns=http://www.w3.org/2000/svg>
+                <path d="M0 0h24v24H0z" fill=none/>
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+            </svg>
+            <span class=tooltip__content>Close</span>
+        </button>
+    </nav>
+</web-navigation-drawer>
+<div class="site-header__actions cluster">
+    <div class=site-header__search>
+        <web-search i18n='{"search":{"en":"Search"},"open_search":{"en":"Open search"},"all_articles":{"en":"All articles"},"close_search":{"en":"Close search"}}' results-id=search-main-results></web-search>
+        <web-search-results id=search-main-results></web-search-results>
+    </div>
+</div>
+</web-header>
+<main id=main>
+    <div class="bck" role=banner>
+        <div class="banner__content flow" ">
+            <h2>Expand Your Community</h2>
+            <p> </p>
+            <p> </p>
+        </div>
+        <div class="banner__content flow" ">
+            <a>Our developer community spans across the globe. Connect through chapter-hosted events, join a program to fast-track success, or simply explore this space to learn something new from the community.</a>
+        </div>
+    </div>
+    <div class=about>
+        <section class="bg-mid-bg hero">
+            <div class=wrapper>
+                <div class="hero__columns switcher" data-direction=rev>
+                    <div class="hero__content flow gap-top-size-4">
+                        <p>“Our community members are talented, passionate, and amazing. I see all kinds of possibilities in them. They're always excited for every event we hold, keep a fanatical attitude toward technological innovation, and are particularly interested in Android, Kotlin, and Flutter.”</p> <p>Vishal K<br>Developer from IIT BHU</p>
+                    </div>
+                    <div>
+                        <div class="hero__content flow gap-top-size-4">
+                            <img src="C:\Users\DELL\Dropbox\PC\Downloads\1676376953443.jfif" width="50000" height="50000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section class="devsite-landing-row devsite-landing-row-4-up devsite-landing-row-padding-large community-description-550-width community-network-row"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+      <header class="devsite-landing-row-header"
+              >
+
+        
+
+        
+        <div class="devsite-landing-row-header-text">
+
+          
+    <h2 id="access-a-global-network-of-developers"
+        data-text="Access a global network of developers"
+        
+        tabindex="0">
+      
+    
+        Access a global network of developers
+      
+  
+    </h2>
+  
+
+          
+            <div class="devsite-landing-row-description">
+              Join a group chapter to meet other developers from a diverse set of backgrounds, companies, and industries.
+
+            </div>
+          
+        </div>
+        
+
+        
+      </header>
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://groups.google.com/forum/#!forum/copsiitbhu">
+    
+  
+  
+    <img alt=""
+         
+         src="C:\Users\DELL\Dropbox\PC\Downloads\1674965393390.jfif"
+         
+         
+         
+         sizes="(max-width: 600px) 50vw, (max-width: 840px) 25vw, 342px"
+         loading="lazy"
+         >
+  
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+          <div class="devsite-landing-row-item-labels">
+  
+
+  
+  <span
+  
+    
+      class="
+             
+             "
+    
+    
+    >For professionals</span>
+
+</div>
+        
+
+        
+    <h3 id="google-developer-groups"
+        data-text="COPS Developer Groups"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://groups.google.com/forum/#!forum/copsiitbhu">
+    
+        COPS Developer Groups
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            Meet local developers virtually or in-person with similar interests in technology.
+
+          </div>
+        
+
+        
+
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://developers.google.com/womentechmakers">
+    
+  
+  
+    <img alt=""
+         
+         src="C:\Users\DELL\Pictures\5acb2dbb-038e-4bb2-ae37-5a284a9e6a90.jpg"
+         
+         
+         
+         sizes="(max-width: 600px) 50vw, (max-width: 840px) 25vw, 342px"
+         loading="lazy"
+         >
+  
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+          <div class="devsite-landing-row-item-labels">
+  
+
+  
+  <span
+  
+    
+      class="
+             
+             "
+    
+    
+    >For Tech Enthusiasts</span>
+
+</div>
+        
+
+        
+    <h3 id="women-techmakers"
+        data-text="Women in Tech"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://hackalog.copsiitbhu.co.in/">
+    
+        COPS WEEK
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            Be part of a world where tech makes thing easier.
+
+          </div>
+        
+
+        
+
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://developers.google.com/community/experts">
+    
+  
+  
+    <img alt=""
+         
+         src="C:\Users\DELL\Pictures\1667824445780.jpg"
+         
+         
+         
+         sizes="(max-width: 600px) 50vw, (max-width: 840px) 25vw, 342px"
+         loading="lazy"
+         >
+  
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+          <div class="devsite-landing-row-item-labels">
+  
+
+  
+  <span
+  
+    
+      class="
+             
+             "
+    
+    
+    >For mentorships</span>
+
+</div>
+        
+
+        
+    <h3 id="google-developer-experts"
+        data-text="Google Developer Experts"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/community/experts">
+    
+        COPS Experts
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            Apply to join a global network of tech experts to support other developers.
+
+          </div>
+        
+
+        
+
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://www.copsiitbhu.co.in/#links">
+    
+  
+  
+    <img alt=""
+         
+         src=C:\Users\DELL\Pictures\1681109880377.jpg
+         
+         
+         
+         sizes="(max-width: 600px) 50vw, (max-width: 840px) 25vw, 342px"
+         loading="lazy"
+         >
+  
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+          <div class="devsite-landing-row-item-labels">
+  
+
+  
+  <span
+  
+    
+      class="
+             
+             "
+    
+    
+    >For students</span>
+
+</div>
+        
+
+        
+    <h3 id="google-developer-student-clubs"
+        data-text="COPS Developer Student Clubs"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://www.copsiitbhu.co.in/#links">
+    
+        COPS Developer Student Clubs
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            Connect and build projects with other university student developers.
+
+          </div>
+        
+
+        
+
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+  
+
+
+  
+
+  
+  
+</article>
+
+
+
+<devsite-notification
+>
+</devsite-notification>
+
+
+  
+<div class="devsite-content-data">
+  <template class="devsite-thumb-rating-down-categories">
+  [{
+      "type": "thumb-down",
+      "id": "missingTheInformationINeed",
+      "label":"Missing the information I need"
+    },{
+      "type": "thumb-down",
+      "id": "tooComplicatedTooManySteps",
+      "label":"Too complicated / too many steps"
+    },{
+      "type": "thumb-down",
+      "id": "outOfDate",
+      "label":"Out of date"
+    },{
+      "type": "thumb-down",
+      "id": "samplesCodeIssue",
+      "label":"Samples / code issue"
+    },{
+      "type": "thumb-down",
+      "id": "otherDown",
+      "label":"Other"
+    }]
+  </template>
+  <template class="devsite-thumb-rating-up-categories">
+  [{
+      "type": "thumb-up",
+      "id": "easyToUnderstand",
+      "label":"Easy to understand"
+    },{
+      "type": "thumb-up",
+      "id": "solvedMyProblem",
+      "label":"Solved my problem"
+    },{
+      "type": "thumb-up",
+      "id": "otherUp",
+      "label":"Other"
+    }]
+  </template>
+  
+</div>
+            
+          </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+          
+            
+          
+        </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+          
+            
+<nav class="devsite-footer-linkboxes nocontent" aria-label="Footer links">
+  
+  <ul class="devsite-footer-linkboxes-list">
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Connect</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//googledevelopers.blogspot.com"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            Blog
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//www.facebook.com/Google-Developers-967415219957038"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            Facebook
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//medium.com/google-developers"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+          
+            Medium
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//twitter.com/googledevs"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 4)"
+            >
+            
+          
+            Twitter
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//www.youtube.com/user/GoogleDevelopers"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 5)"
+            >
+            
+              
+              
+            
+          
+            YouTube
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Programs</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//www.womentechmakers.com"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            Women in Tech
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://www.copsiitbhu.co.in/#links"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            COPS Developer Groups
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/community/experts"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+          
+            Google Developers Experts
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/community/accelerators"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 4)"
+            >
+            
+          
+            Accelerators
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://www.copsiitbhu.co.in/#links"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 5)"
+            >
+            
+              
+              
+            
+          
+            COPS Student Developer Society
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    
+  </nav>
+  
+
+  
+  <nav class="devsite-footer-utility-links" aria-label="Utility links">
+    
+    <ul class="devsite-footer-utility-list">
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          Terms
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          Privacy
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+        
+        <span class="devsite-footer-utility-description">Sign up for the cops.vishalk91_4 for Developers newsletter</span>
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/newsletter/subscribe"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          Subscribe
+        </a>
+        
+      </li>
+      
+    </ul>
+    
+    
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        
+          aria-current="true">English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Bahasa Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es"
+        >Español</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+  </nav>
+</div>
+          
+        </devsite-footer-utility>
+        <devsite-panel></devsite-panel>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar
+    
+    >
+</devsite-snackbar>
+    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics analytics-iframe enable-ga4>
+      
+        <script type="application/json" analytics>[{&#34;dimensions&#34;: {&#34;dimension3&#34;: false, &#34;dimension4&#34;: &#34;Developer Community Programs&#34;, &#34;dimension6&#34;: &#34;en&#34;, &#34;dimension5&#34;: &#34;en&#34;, &#34;dimension11&#34;: false, &#34;dimension1&#34;: &#34;Signed In&#34;}, &#34;gaid&#34;: &#34;UA-24532603-1&#34;, &#34;metrics&#34;: {&#34;ratings_count&#34;: &#34;metric2&#34;, &#34;ratings_value&#34;: &#34;metric1&#34;}}]</script>
+<script type="application/json" tag-management gtm>{&#34;ga4&#34;: [&#34;G-272J68FCRF&#34;], &#34;gtm&#34;: [], &#34;parameters&#34;: {&#34;internalUser&#34;: &#34;False&#34;, &#34;language&#34;: {&#34;machineTranslated&#34;: &#34;False&#34;, &#34;requested&#34;: &#34;en&#34;, &#34;served&#34;: &#34;en&#34;}, &#34;pageType&#34;: &#34;article&#34;, &#34;projectName&#34;: &#34;Developer Community Programs&#34;, &#34;signedIn&#34;: &#34;True&#34;, &#34;tenant&#34;: &#34;developers&#34;, &#34;recommendations&#34;: {&#34;sourcePage&#34;: &#34;&#34;, &#34;sourceType&#34;: 0, &#34;sourceRank&#34;: 0, &#34;sourceIdenticalDescriptions&#34;: 0, &#34;sourceTitleWords&#34;: 0, &#34;sourceDescriptionWords&#34;: 0, &#34;experiment&#34;: &#34;&#34;}, &#34;experiment&#34;: {&#34;ids&#34;: &#34;&#34;}}, &#34;tags&#34;: []}</script>
+      
+    </devsite-analytics>
+    
+      <devsite-badger></devsite-badger>
+    
+    
+    
+    <script nonce="tvO1L8T6IV40ytoB3h+x3157Nok7yx">
+  
+  (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v07c44c7c1b3fe607b0ea91e300f4cf82edbe2da6334f7664661c6358babdf558/developers/js/app_loader.js', '[1,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v07c44c7c1b3fe607b0ea91e300f4cf82edbe2da6334f7664661c6358babdf558","https://www.gstatic.com/devrel-devsite/prod/v07c44c7c1b3fe607b0ea91e300f4cf82edbe2da6334f7664661c6358babdf558/developers","https://developers-dot-devsite-v2-prod.appspot.com",1,null,["/_pwa/developers/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v07c44c7c1b3fe607b0ea91e300f4cf82edbe2da6334f7664661c6358babdf558/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v07c44c7c1b3fe607b0ea91e300f4cf82edbe2da6334f7664661c6358babdf558/developers/images/favicon.png","https://www.gstatic.com/devrel-devsite/prod/v07c44c7c1b3fe607b0ea91e300f4cf82edbe2da6334f7664661c6358babdf558/developers/images/lockup.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,40,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,111,112,113,115,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,144,147,148,149,150,151,152,154,155,156,157,158,159,161,163,164,165,168,169,170,172,173,179,180,182,183,186,190,191,193,196],"AIzaSyAP-jjEJBzmIyKR4F-3XITp8yM9T1gEEI8","AIzaSyB6xiKGDR5O3Ak2okS4rLkauxGUG7XP0hg","developers.google.com","AIzaSyAQk0fBONSGUqCNznf6Krs82Ap1-NV6J4o","AIzaSyCCxcqdrZ_7QMeLCRY20bh_SXdAYqy70KY",null,null,null,["Badges__enable_drag_and_drop_badges","Search__enable_page_map","Experiments__reqs_query_experiments","MiscFeatureFlags__devpanel_url","Search__enable_suggestions_from_borg","Search__enable_acl_suggestions","Profiles__enable_developer_profiles_callout","Profiles__enable_public_developer_profiles","Search__enable_faceted_search","Badges__enable_hide_badges","Analytics__enable_ga4_analytics","Significatio__enable_by_tenant","Profiles__enable_developer_profiles_dashboard_recommendations","Cloud__enable_cloudx_experiment_ids","Badges__enable_delete_badges","MiscFeatureFlags__emergency_css","Profiles__require_profile_eligibility_for_signin","BookNav__enable_book_nav_filtering","Significatio__enable_experiment_id_caching","Cloud__enable_cloudx_ping","MiscFeatureFlags__enable_tls_version_for_gaia_calls","Cloud__enable_cloud_facet_chat","Profiles__enable_profile_communities","Cloud__enable_cloud_dlp_service","Cloud__enable_cloud_shell_fte_user_flow","Profiles__enable_profile_notifications_ui","Cloud__enable_cloud_shell","Search__enable_devsite_serp","SignIn__enable_auto_signin_oauth","BookNav__enable_collapsible_book_nav","Experiments__enable_experiments","Profiles__enable_developer_profiles_interests","Profiles__enable_profile_collections","Profiles__enable_page_saving","Localization__enable_locale_redirects"]]')
+  
+</script>
+    <devsite-a11y-announce></devsite-a11y-announce>
+  </body>
+</html>
