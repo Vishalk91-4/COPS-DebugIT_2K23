@@ -22,4 +22,4 @@ Tech Stack Used :
 HTML, CSS, JAVASCRIPT, MySQL
 
 Video Link :
-https://www.canva.com/design/DAFgMuw0dtM/1UMBPyW4nmrU-Xk-pnA2Tw/edit?utm_content=DAFgMuw0dtM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+https://www.canva.com/design/DAFhB4Dex3M/3hk0_vEAArb93OuGL_9xuw/edit?utm_content=DAFhB4Dex3M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
