@@ -19,7 +19,7 @@ Project/Event/Code PLayground:
 Upcoming where we could have talks featured and Projects like Hackathons for Thousands to compete/ Playground where people have predefined elements just Logic needs to be added to get their Functionality Done
 
 Tech Stack Used :
-HTML, CSS, JAVASCRIPT, MySQL
+HTML, CSS, JAVASCRIPT.
 
 Video Link :
 https://www.canva.com/design/DAFhB4Dex3M/3hk0_vEAArb93OuGL_9xuw/edit?utm_content=DAFhB4Dex3M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
